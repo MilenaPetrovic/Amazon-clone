@@ -1,5 +1,5 @@
 import React from "react";
-import "../Style/BasketItem.css";
+import "../Style/CheckoutProduct.css";
 import { useStateValue } from "../StateProvider";
 
 function BasketItem({ id, title, image, price, rating }) {
@@ -9,37 +9,30 @@ function BasketItem({ id, title, image, price, rating }) {
     // Dispatching the item into the data layer
     dispatch({
       type: "REMOVE_FROM_BASKET",
-      item: {
-        id: id,
-        title: title,
-        image: image,
-        price: price,
-        rating: rating,
-      },
+      id: id,
     });
   };
 
   return (
-    <div className="basketItem">
+    <div className="checkoutProduct">
       {console.log(">>>", image)}
       <img src={image} />
 
-      <div className="basketItem__info">
-        <p>{title}</p>
-        <p className="basketItem__price">
+      <div className="checkoutProduct__info">
+        <p className="checkoutProduct__title">{title}</p>
+        <p className="checkoutProduct__price">
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <div className="basketItem__rating">
+        <div className="checkoutProduct__rating">
           {Array(rating)
             .fill()
             .map((_, i) => (
               <p>⭐</p>
             ))}
         </div>
+        <button onClick={removeFromBasket}>Remove from basket</button>
       </div>
-
-      <button onClick={removeFromBasket}>Remove from basket</button>
     </div>
   );
 }
