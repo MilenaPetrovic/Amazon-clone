@@ -15,7 +15,6 @@ function BasketItem({ id, title, image, price, rating }) {
 
   return (
     <div className="checkoutProduct">
-      {console.log(">>>", image)}
       <img src={image} />
 
       <div className="checkoutProduct__info">
