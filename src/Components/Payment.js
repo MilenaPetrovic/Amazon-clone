@@ -37,9 +37,6 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  console.log("THE SECRET IS  >>> ", clientSecret);
-  console.log("THE USER IS >>> ", user);
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     // One click only

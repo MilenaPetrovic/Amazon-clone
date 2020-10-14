@@ -14,12 +14,13 @@ function Home() {
 
         <div className="home__row">
           <Product
-            id="123123"
-            title="The Lean Startup"
-            price={29.99}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
+            id="012012"
+            title="RUNMUS Gaming Headset Xbox One Headset with 7.1 Surround Sound"
+            price={26.95}
+            image="https://images-na.ssl-images-amazon.com/images/I/61lnzTv2a0L._AC_SL1000_.jpg"
             rating={4}
           />
+
           <Product
             id="456456"
             title="Acer Aspire 5 Slim Laptop, 15.6 inches Full HD IPS Display, AMD Ryzen 3 3200U, Vega 3 Graphics, 4GB DDR4"
@@ -45,10 +46,10 @@ function Home() {
             rating={3}
           />
           <Product
-            id="012012"
-            title="RUNMUS Gaming Headset Xbox One Headset with 7.1 Surround Sound"
-            price={26.95}
-            image="https://images-na.ssl-images-amazon.com/images/I/61lnzTv2a0L._AC_SL1000_.jpg"
+            id="123123"
+            title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={4}
           />
         </div>

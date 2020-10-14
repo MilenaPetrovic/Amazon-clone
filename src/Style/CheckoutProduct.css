@@ -25,6 +25,10 @@
   color: #111;
 }
 
+.checkoutProduct__info > button:hover {
+  background: #be9a3f;
+}
+
 .checkoutProduct__price {
   margin-top: 10px;
   margin-bottom: 10px;
